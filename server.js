@@ -69,5 +69,5 @@ app.get('/script.js', (request, response) => {
 
 
 const PORT = 9000
-app.listen(PORT)
+app.listen(process.env.PORT || PORT)
 console.log(`The server is running on port ${PORT}`)
